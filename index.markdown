@@ -5,9 +5,6 @@
 layout: home
 ---
 
-# Try to modify layout
-## sub tytle
-
 - first
 - next
 - ending
