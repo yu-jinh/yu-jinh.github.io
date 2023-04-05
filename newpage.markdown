@@ -1,6 +1,8 @@
+---
 layout: page
-title: "PAGE-TITLE"
-permalink: /newpage
+title: newpage
+permalink: /newpage/
+---
 
 <!DOCTYPE html>
 <html>
