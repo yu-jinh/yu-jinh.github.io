@@ -4,13 +4,35 @@
 
   <body>
     {%- include header.html -%}
+<!--    top button-->
+<!--    by chatGPT-->
+    <button id="scrollToTopBtn">&#8593;</button>
 
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
 
+<!--    top button-->
     {%- include footer.html -%}
 
   </body>
