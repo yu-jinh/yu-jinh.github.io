@@ -14,7 +14,9 @@ img-url: 2023-04-02-test-everything-blog\
 ## 1 (A lv2 header)
 ### 1.1(A lv3 header) test css "blog-image"
 <div class = "blog-image">
-    <img src="{{ site.blog-img-url }}{{ page.img-url }}test-1.png">
+    <div>
+        <img src="{{ site.blog-img-url }}{{ page.img-url }}test-1.png">
+    </div>
     <div>
         <legend>This is a discription for this image.</legend>
     </div>
