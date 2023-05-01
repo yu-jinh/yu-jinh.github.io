@@ -88,7 +88,7 @@ we take logarithm to both side and deal with the negative log-likelihood instead
 
 {% raw %}
 $$\begin{aligned}
--\log{p(y | X)} &= \sum_{i=1}^n \frac{1}{2} \log{2 \pi \sigma^2} + \frac{1}{2\sigma^2} (y^{(i)} - w^T x^{(i)})^2
+-\log{p(y | X)} &= \sum_{i=1}^n \frac{1}{2} \log{(2 \pi \sigma^2)} + \frac{1}{2\sigma^2} (y^{(i)} - w^T x^{(i)})^2
 \end{aligned}$$
 {% endraw %}
 
