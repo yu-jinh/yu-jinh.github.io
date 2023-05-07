@@ -150,12 +150,23 @@ $$\begin{aligned}
 
 {% raw %}
 $$\begin{aligned}
-\frac{0.5}{\sqrt{n}} &= \pm 0.01\\
+\sqrt{\frac{0.5^2}{n}} &= \pm 0.01\\
 n &= 2500
 \end{aligned}$$
 {% endraw %}
 
 we should collect roughly 2500 samples.
+
+For 2 standard deviation:
+
+{% raw %}
+$$\begin{aligned}
+\sqrt{\frac{(2 * 0.5)^2}{n}} &= \pm 0.01\\
+n &= 10000
+\end{aligned}$$
+{% endraw %}
+
+we should collect roughly 10000 samples.
 ## Reference
 
 Zhang, A., Lipton, Z.C., Li, M., & Smola, A.J. (2021). Dive into Deep Learning. Release 0.8.0. D2L.ai. http://d2l.ai/
