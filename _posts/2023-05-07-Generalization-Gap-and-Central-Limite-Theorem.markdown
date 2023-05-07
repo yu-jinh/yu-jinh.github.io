@@ -42,7 +42,7 @@ $$\begin{aligned}
 \end{aligned}$$
 {% endraw %}
 
-How is the gap perform between {% raw %}
+How is the gap  between {% raw %}
 $$\begin{aligned}
 \epsilon_{\mathcal{D}}(f)
 \end{aligned}$$
@@ -50,7 +50,7 @@ $$\begin{aligned}
 $$\begin{aligned}
 \epsilon(f) 
 \end{aligned}$$
-{% endraw %}?
+{% endraw %} behave?
 
 ## Central Limite Theorem
 
