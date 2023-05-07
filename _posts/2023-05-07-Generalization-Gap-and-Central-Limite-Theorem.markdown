@@ -100,7 +100,62 @@ $$\begin{aligned}
 
 Thus, to estimate our test error twice as precisely, we must collect four times
 as large a test set. To reduce our test error by a factor of one hundred, we must collect ten
-thousand times as large a test set. 
+thousand times as large a test set.
+
+## Example
+
+For a classification problem, since the error can only be either 0 or 1, they are Bernoulli random variables.
+Therefore, the mean is {% raw %}
+$$\begin{aligned}
+\epsilon(f)
+\end{aligned}$$
+{% endraw %} and the varience is {% raw %}
+$$\begin{aligned}
+\epsilon(f)(1 - \epsilon(f))
+\end{aligned}$$
+{% endraw %}
+
+A little investigation of this function reveals that
+our variance is highest when the true error rate is close to 0:5 and can be far lower when it is
+close to 0 or close to 1. This tells us that the asymptotic standard deviation of our estimate {% raw %}
+$$\begin{aligned}
+\epsilon_{\mathcal{D}}(f)
+\end{aligned}$$
+{% endraw %} of the error {% raw %}
+$$\begin{aligned}
+\epsilon(f)
+\end{aligned}$$
+{% endraw %} (over the choice of the n test samples) cannot be any greater than{% raw %}
+$$\begin{aligned}
+\frac{0.5}{\sqrt{n}}
+\end{aligned}$$
+{% endraw %}.
+
+
+if we want our test error {% raw %}
+$$\begin{aligned}
+\epsilon_{\mathcal{D}}(f)
+\end{aligned}$$
+{% endraw %}
+to approximate the population error {% raw %}
+$$\begin{aligned}
+\epsilon(f)
+\end{aligned}$$
+{% endraw %} such that one standard deviation corresponds to an
+interval of {% raw %}
+$$\begin{aligned}
+\pm 0.01
+\end{aligned}$$
+{% endraw %}:
+
+{% raw %}
+$$\begin{aligned}
+\frac{0.5}{\sqrt{n}} &= \pm 0.01\\
+n &= 2500
+\end{aligned}$$
+{% endraw %}
+
+we should collect roughly 2500 samples.
 ## Reference
 
 Zhang, A., Lipton, Z.C., Li, M., & Smola, A.J. (2021). Dive into Deep Learning. Release 0.8.0. D2L.ai. http://d2l.ai/
